@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+    font-family: "OpenSans", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: 700;
+    color: $dark-blue;
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 15px;
+    }
+    &::before{
+        background-image: url("../images/paw.svg");
+    }
+    &::after{
+        background-image: url("../images/paw.svg");
+        transform: rotate(45deg);
+    }
+}

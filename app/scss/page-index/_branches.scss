@@ -1,0 +1,80 @@
+.branches {
+    margin-top: -50px;
+    padding: 84px 0 123px;
+    background-image: url('../images/wawe.svg');
+    background-size: cover;
+    background-position: center;
+    &__title {
+        margin-bottom: 42px;
+
+        &::before {
+            left: 365px;
+        }
+
+        &::after {
+            right: 365px;
+        }
+    }
+
+    &__inner {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 30px;
+        padding: 28px 38px;
+        max-width: 276px;
+        width: 100%;
+        box-shadow: 0px 9px 25px rgba(4, 3, 37, 0.08);
+        border-radius: 10px;
+        font-size: 26px;
+        color: $dark-blue;
+        font-weight: 700;
+        transition-property: box-shadow, transform;
+        transition-duration: 0.2s;
+
+        &+& {
+            margin-left: 30px;
+        }
+        &:hover{
+            box-shadow: 0px 9px 25px rgba(4, 3, 37, 0.3);
+            transform: scale(1.1);
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 262px;
+            height: calc(100% - 14px);
+            border: 3px solid #E6E7F4;
+            border-radius: 8px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__img {
+        position: relative;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #4B4E6B;
+            opacity: 0.1;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+}
