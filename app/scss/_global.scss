@@ -46,6 +46,7 @@ body {
 
 .section-title {
     position: relative;
+    margin: 0 auto;
     text-align: center;
     font-size: 50px;
     line-height: 68px;
@@ -60,11 +61,8 @@ body {
         background-repeat: no-repeat;
         top: 15px;
     }
-    &::before{
-        background-image: url("../images/paw.svg");
-    }
-    &::after{
-        background-image: url("../images/paw.svg");
-        transform: rotate(45deg);
-    }
+}
+
+.text-bold{
+    font-weight: 700;
 }

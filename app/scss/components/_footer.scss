@@ -7,17 +7,12 @@
     &__wrapper{
         max-width: 888px;
         width: 100%;
+        padding: 0 15px;
         margin: 0 auto;
     }
 
     &__title {
         margin-bottom: 35px;
-        &::before{
-            left: 155px;
-        }
-        &::after{
-            right: 155px;
-        }
     }
 
     &__form {
@@ -40,7 +35,7 @@
 
     &__input {
         margin-bottom: 30px;
-        max-width: 276px;
+        max-width: 265px;
         width: 100%;
         border-radius: 100px;
 

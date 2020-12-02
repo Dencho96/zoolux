@@ -10,14 +10,6 @@
     &__title {
         margin-bottom: 70px;
         font-size: 30px;
-
-        &::before {
-            left: 200px;
-        }
-
-        &::after {
-            right: 200px;
-        }
     }
     &__inner{
         justify-content: space-between;
